@@ -1,0 +1,128 @@
+/* Reset browser styling*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img,
+video,
+audio {
+    max-width: 100%;
+}
+
+nav{
+   background: linear-gradient(to right, #e74c3c, #9b59b6, #3498db);
+    padding: 2vw;
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 1.8vw;
+}
+
+nav a{
+color: black;
+text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+.about-content {
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+}
+.profile-picture {
+    background: linear-gradient(to right, #e74c3c, #9b59b6, #3498db);
+    width: 40%;  
+    border-radius: 20vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 3%;
+    margin: 1% 3%;
+}
+.profile-picture img {
+   border-radius: 20vw; 
+}
+
+#body {
+width: 40%;
+margin: 3%;
+font-size: 1.8vw;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: white;
+font-weight: 600;
+color:blueviolet;
+border-radius: 4vw 1vw;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+padding: 1%;
+}
+
+body{
+    background: linear-gradient(to right, #e3a39c, #bba7c4,  #97c6e6);
+}
+.about-section {
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0 0;
+    background: linear-gradient(to right, #e3a39c, #bba7c4,  #97c6e6);
+    padding: 20px;
+   
+}
+.about-section h1 {
+    font-size: 2.5vw;
+    text-align: left;
+    margin-left: 15%;
+
+}
+
+footer {
+    background: linear-gradient(to right, #e74c3c, #9b59b6, #3498db);
+    color: black;
+    text-align: center;
+    padding: 0 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-left: -5%;
+}
+
+
+
+@media (max-width: 480px) {
+    nav {
+        font-size: 4vw;
+        flex-direction: column;
+        padding: 6vw;
+    }
+    nav a{
+       border-top: #e3a39c;
+       padding: 1%;
+        }
+    .about-content {
+        flex-direction: column;
+        padding: 10%;
+    }
+
+    .profile-picture {
+        width: 70%;
+        margin: 5% auto;
+    }
+
+    #body {
+        width: 100%;
+        margin: 10% auto;
+        font-size: 4vw;
+    }
+
+    .about-section h1 {
+        font-size: 5vw;
+        margin-left: 5%;
+    }
+
+    footer {
+        font-size: 4vw;
+        padding: 2vw 0;
+    }
+}
+

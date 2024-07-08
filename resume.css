@@ -1,0 +1,128 @@
+/* Reset browser styling*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img,
+video,
+audio {
+    max-width: 100%;
+}
+
+nav{
+    background: linear-gradient(to right, #e74c3c, #9b59b6, #3498db);
+    padding: 2vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.8vw;
+}
+
+nav a{
+color: black;
+text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.hero {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 12px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 30px;
+    background: linear-gradient(to right, #f1c7c2, #bab0bf,  #d1e3ee);
+}
+
+.resume-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.resume-section h1, .resume-section h2, .resume-section h3, .resume-section h4 {
+    color: #333;
+}
+
+.resume-section p, .resume-section ul {
+    margin-bottom: 20px;
+}
+
+.resume-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.resume-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.resume-section a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: linear-gradient(to right, #e74c3c, #9b59b6, #3498db);
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 480px) {
+    nav {
+        font-size: 4vw;
+        flex-direction: column;
+        padding: 6vw;
+    }
+    nav a{
+       border-top: #e3a39c;
+       padding: 1%;
+        }
+    }
